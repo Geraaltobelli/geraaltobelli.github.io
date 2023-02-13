@@ -1,0 +1,35 @@
+.ov-btn-slide-left {
+    font-size: 24px;
+    background: rgb(240, 134, 63); /* color de fondo */
+    /* color: #0e76a8; color de fuente */
+    border: 2px solid #0e76a8; /* tamaño y color de borde */
+    padding: 14px 16px;
+    border-radius: 5px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+ 
+  .ov-btn-slide-left::after {
+    content: "";
+    background: #0e76a8; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 14px 16px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.45s;
+    transition: all 0.55s;
+  }
+  .ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }

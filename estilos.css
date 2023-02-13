@@ -97,6 +97,12 @@ h2{
   min-width: 280px;
   
 }
+@media (max-device-width : 770px) {
+    #menu {
+        min-width: 180px;
+        
+    }
+}
 #contacto{
     display: flex;
     flex-direction: row;
@@ -126,6 +132,11 @@ li{
     margin-bottom: 0px;
     list-style-type: none ;
 }
+@media (max-device-width : 770px) {
+    li {
+        width: 30%;
+        
+    }}
 
 #contenedor-perfil{
     text-align: center;

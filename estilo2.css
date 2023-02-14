@@ -34,4 +34,22 @@
     transition: all 0.35s;
   }
 
- 
+  @media (max-device-width : 770px) {
+    .ov-btn-slide-left {
+      
+      font-size: 16px;
+      padding: 10px 12px;
+        width: auto;
+        
+    }}
+    @media (max-device-width : 770px) {
+      .ov-btn-slide-left::after {
+        padding: 10px 12px;
+          width: auto;
+          
+      }}
+      @media (max-device-width : 770px) {
+        .ov-btn-slide-left:hover::after {
+            width: auto;
+            
+        }}

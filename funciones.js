@@ -1,5 +1,6 @@
 
-document.getElementById("infoPersonal").addEventListener("click", function() {
+document.getElementById("infoPersonal").addEventListener("click", function(event) {
+    event.preventDefault();
     document.getElementById("inbox").style.justifyContent = "center"
     document.getElementById("inbox").style.display  =""
     
@@ -19,7 +20,8 @@ document.getElementById("infoPersonal").addEventListener("click", function() {
    
     });
 
-    document.getElementById("estudios").addEventListener("click", function() {
+    document.getElementById("estudios").addEventListener("click", function(event) {
+        event.preventDefault();
         document.getElementById("inbox").style.justifyContent = "center"
         document.getElementById("inbox").style.display  =""
         let universitario = "INGENIERIA EN SISTEMAS"  ;
@@ -37,8 +39,9 @@ document.getElementById("infoPersonal").addEventListener("click", function() {
              
         });
     
-        document.getElementById("aptitudes").addEventListener("click", function() {
-            document.getElementById("inbox").style.justifyContent = "normal"
+        document.getElementById("aptitudes").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("inbox").style.justifyContent = "center"
             document.getElementById("inbox").style.display  =""
             let aptitud = "Paquete Office "+"</ol>"+
                           "<ol>" +"CCTV "+"</ol>"+
@@ -55,7 +58,8 @@ document.getElementById("infoPersonal").addEventListener("click", function() {
             
             });
 
-            document.getElementById("exp-laboral").addEventListener("click", function() {
+            document.getElementById("exp-laboral").addEventListener("click", function(event) {
+                event.preventDefault();
                 document.getElementById("inbox").style.display  =""
                 document.getElementById("inbox").style.justifyContent = "normal" 
 
@@ -78,7 +82,8 @@ document.getElementById("infoPersonal").addEventListener("click", function() {
             
                 });
              
-                document.getElementById("idiomas").addEventListener("click", function() {
+                document.getElementById("idiomas").addEventListener("click", function(event) {
+                    event.preventDefault();
                     document.getElementById("inbox").style.display  =""
                     document.getElementById("inbox").style.justifyContent = "center" 
     
